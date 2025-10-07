@@ -1,0 +1,28 @@
+
+.about{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.about-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-left{
+    flex-basis: 35%;
+    position: relative;
+}
+.about-right{
+    flex-basis: 54%;
+}
+.about h2{
+    font-size: 32px;
+    color: rgb(227, 126, 32);
+    margin-bottom: 15px;
+}
+.about p{
+    color: #000000;
+    margin-bottom: 15px;
+}

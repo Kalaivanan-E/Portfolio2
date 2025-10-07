@@ -1,0 +1,16 @@
+.skills{
+    margin: 80px auto;
+    width: 90%;
+    align-items: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.gallery img{
+    width: 12%;
+    border-radius: 10px;
+
+}
