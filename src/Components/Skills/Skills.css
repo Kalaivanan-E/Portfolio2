@@ -14,3 +14,16 @@
     border-radius: 10px;
 
 }
+.gallery1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5%;
+    margin-bottom: 40px;
+}
+.gallery1 img{
+    width: 12%;
+    border-radius: 10px;
+    border: none;
+
+}
