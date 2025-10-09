@@ -24,6 +24,9 @@ nav ul li{
     font-size: 16px;
     cursor: pointer;
 }
+nav ul li:hover{
+  color: orange;
+}
 .logo{
     width: 200px;
     font-size: 30px;
@@ -39,4 +42,8 @@ span{
 }
 .dark-nav span {
   color: black; /* span color when navbar is sticky */
+}
+
+.dark-nav ul li :hover{
+  color: black;
 }

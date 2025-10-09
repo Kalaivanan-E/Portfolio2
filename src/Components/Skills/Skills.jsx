@@ -1,14 +1,14 @@
 import React from 'react'
 import './Skills.css'
-import HTML from '../../assets/HTML.jpg'
-import CSS from '../../assets/CSS.jpg'
-import JS from '../../assets/JS.jpg'
+import HTML from '../../assets/HTML3.png'
+import CSS from '../../assets/CSS1.png'
+import JS from '../../assets/JS1.png'
 import Reactjs from '../../assets/React.jpg'
 import mysql from '../../assets/Mysql.jpg'
-import MongoDB from '../../assets/MongoDB.jpg'
+import MongoDB from '../../assets/mongodb.png'
 import Github from '../../assets/github.jpg'
-import Nodejs from '../../assets/node js.jpg'
-import Bootstrap from '../../assets/Bootstrap.jpg'
+import Nodejs from '../../assets/nodejs.png'
+import Bootstrap from '../../assets/Bootstrap-removebg-preview.png'
 
 const Skills = () => {
   return <>

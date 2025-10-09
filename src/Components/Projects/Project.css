@@ -1,51 +1,167 @@
-
-.projects{
-    margin: 80px auto;
-    width: 100%;
+.projects {
+    min-height: 90vh;
+    padding: 0rem 5% 3rem;
+    background: var(--snd-bg-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-top: -10px;
 }
-.project img{
-    width: 100%; 
-    border-radius: 10px;
-    display: block;
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    max-width: 950px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    justify-content: center;
 }
-.project{
-    flex-basis: 31%;
+
+.project {
+    width: 370px;
+    height: 230px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(27, 25, 25);
+    box-shadow: 0 4px 8px rgba(74, 74, 74, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
     position: relative;
-}
-.caption{
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,15,152,0.3);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(143, 143, 143, 0.3);
+    background-color: rgba(0, 0, 0, 0.85); /* Darkens card on hover */
+}
+
+/* Image Styling */
+.project img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.08);
+    opacity: 0.3; /* Fade image slightly to make text readable */
+}
+
+/* Overlay Text Styling */
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+    color: #ffffff;
+    display: flex;
     flex-direction: column;
-    color: aliceblue;
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
-    padding-top: 70%;
-    transition: 0.4s;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
 }
-.caption h3 {
-    /* width: 60px; */
-    font-size: 20px;
-    color: black;
-    /* margin-bottom: 10px; */
+
+.project:hover .overlay {
+    opacity: 1;
 }
-.caption p{
-    font-size: smaller;
-    padding: 20px;
+
+.project .overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-weight: bold;
 }
-.project:hover .caption{
-    opacity: 10;
-    padding-top: 0;
-    /* background-color: lightblue; */
-    /* transition: all 0.3s ease-in-out; */
+
+.project .overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    max-width: 80%;
+    opacity: 0.9;
+}
+
+.project .overlay a {
+    display: inline-block;
+    padding: 7px 12px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.project .overlay a:hover {
+    background: var(--text-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .project {
+        width: 320px;
+        height: 200px;
+    }
+
+    .project img {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        width: 90%;
+        height: 200px;
+    }
+
+    .project img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+/* Button Styling */
+.btn1 {
+    background-color: rgb(0, 140, 255);
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    transition: 0.8s;
 }
