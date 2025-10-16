@@ -8,7 +8,7 @@ const Home = () => {
         <div className='row'>
             <div className="col-6">
                 <h1>Hello, I'm Kalaivanan</h1>
-                <h3>Frontend Developer</h3>
+                <h3>Web Developer</h3>
                <a href="/resume.docx" download="Kalaivanan resume.docx">
                    <button className='btn'>Download CV</button>
                </a>    
