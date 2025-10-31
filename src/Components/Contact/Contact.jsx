@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.css'
 
 const Contact = () => {
-     const [result, setResult] = React.useState("");
+  const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -29,7 +29,7 @@ const Contact = () => {
   return <>
     <div className="contact">
         <div className="contact-col">
-            <form>
+            <form onSubmit={onSubmit}>
                 <label>Your name</label>
                 <input type="text" name='name' placeholder='Enter your name' required />
                 <label>Phone Number</label>
@@ -38,6 +38,7 @@ const Contact = () => {
                 <textarea name="message" rows='6' placeholder='Enter your message' required></textarea>
                 <button type='sumbit' className='btn dark-btn'>Submit now</button>
             </form>
+            <span>{result}</span>
         </div>
     </div>
   </>
